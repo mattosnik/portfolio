@@ -29,7 +29,7 @@ body { margin: 0; overflow-x: hidden; color: var(--text); font-family: Manrope, 
 
 /* Capa */
 .hero { position: relative; display: flex; flex-direction: column; justify-content: center; min-height: 110svh; padding: 10rem 6vw 5rem; overflow: hidden; }
-.hero::after { position: absolute; right: -9vw; bottom: -11vw; width: min(42vw, 580px); aspect-ratio: 1; content: ""; border: 1px solid rgba(99, 200, 255, .22); border-radius: 50%; box-shadow: 0 0 0 42px rgba(99, 200, 255, .035), 0 0 0 84px rgba(99, 200, 255, .025); animation: orbit 8s ease-in-out infinite; }
+.hero::after { position: absolute; right: -9vw; bottom: -11vw; width: min(42vw, 580px); aspect-ratio: 1; content: ""; border: 1px solid rgba(255, 76, 100, .22); border-radius: 50%; box-shadow: 0 0 0 42px rgba(255, 76, 100, .035), 0 0 0 84px rgba(255, 76, 100, .025); animation: orbit 8s ease-in-out infinite; }
 .hero-grid { position: absolute; inset: 0 0 0 51%; opacity: .7; background-image: linear-gradient(rgba(255, 76, 100, .1) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 76, 100, .1) 1px, transparent 1px); background-size: 58px 58px; mask-image: linear-gradient(to bottom, transparent, #000 25%, transparent 95%); animation: grid-drift 16s linear infinite; }
 .eyebrow, .section-label, .project-type, .project-number, .drag-note { color: var(--muted); font: 500 .69rem "DM Mono", monospace; letter-spacing: .12em; }
 .hero h1 { position: relative; z-index: 1; max-width: 1100px; margin: 1.8rem 0 5.2rem; color: var(--white); font-size: clamp(5rem, 13vw, 13.7rem); letter-spacing: -.095em; line-height: .78; }
@@ -59,7 +59,7 @@ body { margin: 0; overflow-x: hidden; color: var(--text); font-family: Manrope, 
 
 /* Projetos */
 .section-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 3.8rem; }.slider-controls { display: flex; gap: .65rem; }
-.slider-button { width: 44px; height: 44px; color: var(--white); font-size: 1rem; cursor: pointer; background: rgba(13, 35, 72, .75); border: 1px solid var(--line); border-radius: 50%; transition: background .2s, transform .2s; }.slider-button:hover { background: var(--blue); transform: translateY(-2px); }
+.slider-button { width: 44px; height: 44px; color: var(--white); font-size: 1rem; cursor: pointer; background: rgba(46, 8, 16, .8); border: 1px solid var(--line); border-radius: 50%; transition: background .2s, transform .2s; }.slider-button:hover { background: var(--blue); transform: translateY(-2px); }
 .project-viewport { margin-right: -6vw; overflow: hidden; }.project-track { display: flex; gap: 1.25rem; transition: transform .32s cubic-bezier(.2,.8,.2,1); }
  .project-card { display: flex; flex-direction: column; min-width: min(64vw, 680px); height: 520px; padding: 1.6rem; overflow: hidden; background: linear-gradient(145deg, rgba(73, 13, 25, .95), rgba(20, 5, 9, .98)); border: 1px solid var(--line); border-radius: var(--radius); transition: transform .25s, border-color .25s, box-shadow .25s; }
 .project-card:hover { border-color: rgba(255, 76, 100, .85); box-shadow: 0 20px 54px rgba(0, 0, 0, .4); transform: translateY(-6px); }.project-number { color: #ec9bab; }
