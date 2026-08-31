@@ -67,7 +67,7 @@ body { margin: 0; overflow-x: hidden; color: var(--text); font-family: Manrope, 
 /* Projetos */
 .section-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 3.8rem; }.slider-controls { display: flex; gap: .65rem; }
 .slider-button { width: 44px; height: 44px; color: var(--white); font-size: 1rem; cursor: pointer; background: rgba(46, 8, 16, .8); border: 1px solid var(--line); border-radius: 50%; transition: background .2s, transform .2s; }.slider-button:hover { background: var(--blue); transform: translateY(-2px); }
-.project-viewport { margin-right: -6vw; overflow: hidden; }.project-track { display: flex; gap: 1.25rem; transition: transform .32s cubic-bezier(.2,.8,.2,1); }
+.project-viewport { margin-right: -6vw; overflow: hidden; }.project-track { display: flex; gap: 1.25rem; cursor: grab; touch-action: pan-y; user-select: none; transition: transform .32s cubic-bezier(.2,.8,.2,1); }.project-track.dragging { cursor: grabbing; transition: none; }.project-track.dragging * { pointer-events: none; }
  .project-card { display: flex; flex-direction: column; min-width: min(34vw, 405px); height: 405px; padding: 1.35rem; overflow: hidden; background: linear-gradient(145deg, rgba(73, 13, 25, .95), rgba(20, 5, 9, .98)); border: 1px solid var(--line); border-radius: 14px; transition: transform .25s, border-color .25s, box-shadow .25s; }
 .project-card:hover { border-color: rgba(255, 76, 100, .85); box-shadow: 0 20px 54px rgba(0, 0, 0, .4); transform: translateY(-6px); }.project-number { color: #ec9bab; }
 .project-art { position: relative; display: flex; align-items: center; justify-content: center; height: 130px; margin: 1.15rem 0; overflow: hidden; border-radius: 9px; }
