@@ -25,3 +25,11 @@ let startX = 0;
 track.addEventListener('pointerdown', e => { startX = e.clientX; track.setPointerCapture(e.pointerId); });
 track.addEventListener('pointerup', e => { if (Math.abs(e.clientX - startX) > 45) slide(e.clientX < startX ? 1 : -1); });
 window.addEventListener('resize', () => slide(0));
+
+const heroGrid = document.querySelector('.hero-grid');
+window.addEventListener('pointermove', event => {
+  if (window.innerWidth < 700) return;
+  const x = (event.clientX / window.innerWidth - .5) * 12;
+  const y = (event.clientY / window.innerHeight - .5) * 12;
+  heroGrid.style.transform = `translate(${x}px, ${y}px)`;
+});
